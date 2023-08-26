@@ -4,7 +4,7 @@ const audioFileSchema = new mongoose.Schema({
   originalName: String,
   mimeType: String,
   size: Number,
-  data: Buffer, // Store audio file data as a buffer
+  url: String,
 });
 
 const AudioFile = mongoose.model("AudioFile", audioFileSchema);
